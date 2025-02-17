@@ -3,18 +3,20 @@
 # surename=input("familyangizni kiriting >> ")
 
 # age=int(input("yoshingizni kiriting >> "))
-# print=(name)
-# print(surname)
-# print=(2024-age)
+# print(name)
+# print(surename)
+# print(2025-age)
 
-# 
-# # print("  A")
+ 
+# print("  A")
 # print(" A A")
 # print("AAAAA")
+
 # print("222222")
 # print("2    2")
 # print("2    2")
 # print("222222")
+
 # print("  A")
 # print("AAAAA")
 # print("AAAAA")
@@ -383,3 +385,47 @@ from functions import *
 #         break
 # print(x)
 
+# satr = input("qavs kirit >> ")
+# x = len(satr)
+# count = 0
+# x1 = x/2
+
+# if x1 % 2 == 0:
+#     for i in range(x1):
+#         if satr[i] == "(":
+#             count += 1
+
+#     for j in range(x1 - 1, x):
+#         if satr[j] == ")":
+#             count += 1
+# else:
+#     print(False)
+# if count == 2:
+#     print(True)
+# else:
+#     print(False)
+
+# d = {
+#     "I" : 1,
+#     'V' : 5,
+#     'X' : 10,
+#     'L' : 50,
+#     'C' : 100,
+#     'D' : 500,
+#     'M' : 1000
+# }
+
+# rim = input(">>>")
+# ans = 0
+# x = len(rim)
+
+# for i in range(x-1):
+#     if d[rim[i]] < d[rim[i + 1]]:
+#         ans -= d[rim[i]]
+#     else:
+#         ans += d[rim[i]]
+
+# ans += d[rim[-1]]
+
+
+# print(ans)

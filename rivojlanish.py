@@ -268,3 +268,129 @@
 #     i.move()
 #     print(i.brand)
 #     print(i.model)
+
+
+"""09.01.25y"""
+
+# class Avto:
+#     def __init__(self, make, model, rang, narh):
+#         self.make = make
+#         self.modelP = model
+#         self.rang = rang
+#         self.narh = narh
+#     def __repr__(self):
+#         return f"Avto: {self.make}, {self.model}"
+    
+#     def __lt__(self,y):
+#         return self.narh < y.narh
+#     def __eq__(self,y):
+#         return self.narh == y.narh
+#     def __le__(self,y):
+#         return self.narh < y.narh
+
+# class AvtoSalon:
+#     def __init__(self, name):
+#         self.name = name
+#         self.avtolar = []
+#     def __repr__(self):
+#         return f"{self.name} avtosaloni"   
+    
+#     def add_avto(self, *args):
+#         for avto in args:
+#             if isinstance(avto, AvtoSalon):
+#                 self.avtolar.append(avto)
+#             else:
+#                 print("Avtamabil kiriting")
+
+
+"""10.01.25y"""
+
+# class Pupil:
+#     def __init__(self, name, surname, year, GPA):
+#         self.name = name
+#         self.surname = surname
+#         self.year = year
+#         self.gpa = GPA
+#     def __repr__(self):
+#         return f"O'quvchining ismi-{self.name},familiyasi-{self.surname},yoshi-{2025-self.year}"
+
+# class PupilManager:
+#     def __init__(self):
+#         self.pupils = []
+#     def add(self,student):
+#         self.pupils.append(student)
+#         return self.pupils
+#     def get_pupils(self):
+#         for pupil in self.pupils:
+#             print(pupil.get_info)
+#     def max_gpa(self):
+#         gpas = 0
+#         for pupil in self.pupils:
+#             if pupil.gpas > gpas:
+#                 gpas = pupil.gpas
+#         return gpas
+    
+
+"""C++ masalalari"""
+
+# L = int(input())
+# L /= 100
+# print(int(L))
+
+
+"""16.01.25y"""
+
+###w3 school : python scope
+
+# def myfunc():
+#     x = 300
+#     def infunc():
+#         print(x)
+#     infunc()
+
+# myfunc()
+
+# x = 300
+
+# def myfunc():
+#     print(x)
+# myfunc()
+# print(x)
+
+# x = 300
+# def myfunc():
+#     x = 200
+#     print(x)
+# myfunc()
+# print(x)
+
+# x = 300
+
+# def myfunc():
+#     global x
+#     x = 200
+# myfunc()
+# print(x)
+
+# y = 5  # Global o'zgaruvchi
+
+# def funksiya():
+#     y = 10  # Mahalliy o'zgaruvchi
+#     print("Funksiya ichida:", y)
+
+# funksiya()  # Natija: 10 (mahalliy qiymat)
+# print("Tashqarida:", y)  # Natija: 5 (global qiymat)
+
+
+# def myfun1():
+#     x = "Jane"
+#     def infunc():
+#         nonlocal x
+#         x = "hello"
+#     infunc()
+#     return x
+# print(myfun1())
+
+"""24.01.25y"""
+
+

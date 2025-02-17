@@ -1082,6 +1082,411 @@
 
 """26.12.24y"""
 
-import functions
+# import functions
 
-print(functions.signup("Abbos", "1111"))
+# print(functions.signup("Abbos", "1111"))
+
+# lst = [50,20,50,60,80]
+# opw = 0
+# sum = 0
+# for i in lst:
+#     sum += i
+#     opw += 1
+# result = sum / opw
+# print(result)
+
+# words = ["attation", "indation", "attend"]
+# pref = "at"
+# count = 0
+# for i in words:
+#     if i.startswith(pref):
+#         count += 1
+# print(count)
+
+
+# def decorator(fun):
+#     def ichki(a,b):
+#         print("2 ta son qo'shilmoqda")
+#         fun(a, b)
+#         print('qo\'shildi')
+#     return ichki
+
+# @decorator
+# def add(a,b):
+#     print(a + b)
+
+# add(2,3)
+
+# s = 'leetcode'
+# for i in s:
+#     if s.count(i) != 1:
+#         continue
+#     else:
+#         print(s.index(i))
+
+# import time
+# start = time.time()
+# k  = 0
+# for i in range(1000):
+#     k += 1
+#     print(k / 1000)
+# end = time.time()
+# print((end - start) * 1000)
+
+"""27.1.25y"""
+
+# class Pupil:
+#     school_name = "ABC"
+#     def __init__(self, name):
+#         self.name = name
+    
+#     @classmethod
+#     def change_school(cls, name):
+#         Pupil.school_name = name
+
+# abduraxim = Pupil("Abduraxim")
+# print(abduraxim.school_name)
+
+# Pupil.change_school("poxoy school")
+
+# print(abduraxim.school_name)
+
+# class Talaba:
+#     xojatxona_narxi = 2000
+#     def __init__(self, name):
+#         self.name = name
+    
+#     @classmethod
+#     def change_price(cls, price):
+#         Talaba.xojatxona_narxi = price
+
+# abduraxim = Talaba("Abduraxim")
+# print(abduraxim.xojatxona_narxi)
+
+
+# class Pupil:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def __repr__(self):
+#         return f"{self.name} -> {self.age}"
+    
+#     def __add__(self, other):
+#         return Pupil(self.name, self.age + other)
+
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+
+#     def __repr__(self):
+#         return f"x=({self.x}), y=({self.y})"
+    
+#     def __add__(self,other):
+#         return (self.x + other.x, self.y + other.y)
+    
+#     def __sub__(self,other):
+#         return Point(self.x - other.x + self.y - other.y)
+    
+#     def __mul__(self, other):
+#         return self.x * other.x + self.y * other.y
+
+#     def __truediv__(self, other):
+#         return self.x / other.x, self.y / other.y
+
+# p1 = Point(2, 4)
+# p2 = Point(3, 2)
+# p1 *= p2
+# print(p1)
+
+
+"""1.30.25y"""
+
+# class Pupil:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def get_name(self):
+#         return self.name
+#     def set_age(self, value):
+#         if value > 0:
+#             self.age = value
+#         else:
+#             print("Yoshingizni kiriting !")
+#     def get_age(self):
+#         return self.age
+#     def set_name(self, name):
+#         if name.isalpha():
+#             self.name = name
+#         else:
+#             print("Passportdagi ismingni kiriting !")
+#     def __repr__(self):
+#         return f"{self.name} {self.age}"
+
+# p1 = Pupil("A", 16)
+
+# p1.set_age(-10)
+# p1.set_name("A1")
+
+# print(p1)
+
+# class PDP:
+#     def __init__(self, count):
+#         self.count = count
+
+
+# s = "abca"
+
+# for i in s:
+#     ind = s.index(i)
+#     tes = s[:ind] + s[ind:]
+# if tes == tes[::-1]:
+#     print(1)
+# else:
+#     print(0)
+
+# import json
+
+# data = '[1,2,3,"aka",[1,2,3],8]'
+# ata  =  json.loads(data)
+
+# print(ata)
+
+
+# import json
+
+# data = '[1,2,3,"aka",[1,2,3],8]'
+
+# ata = json.loads(data)
+# print(ata)
+
+# data = {'[1,2,3,"aka",[1,2,3],8]'}
+
+# ata = json.load(data)
+# print(ata)
+
+# import requests
+
+# x = requests.get('https://w3schools.com/python/demopage.htm')
+
+# print(x.text)
+
+
+# import json
+# from modules import User
+
+# path = "data.json"
+
+# u = User('Abbos', 1221)
+
+# # with open(path, 'w') as file:
+# #     json.dump(u.to_dict(), file, indent=4)
+
+# with open(path, 'r') as file:
+#     data = json.load(file)
+#     user = User.dict_to(data)
+# print(user)
+
+
+# import requests
+# import json
+
+# sura = 2
+# oyat = 282
+# shaxs = "uzb-muhammadsodikmu"
+
+# url = f"https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/{shaxs}/{sura}/{oyat}.json"
+
+# response = requests.get(url).json()
+
+# filename = "quron.txt"
+
+# with open(filename, 'w') as f:
+#     f.write(json.dumps(response))
+
+
+"""6.2.25y"""
+
+# #1
+# n = int(input())
+# if n >= 0:
+#     print(n + 1)
+# else:
+#     print(n)
+
+# #2
+# n = int(input('>> '))
+# if n >= 0:
+#     print(n + 1)
+# else:
+#     print(n - 2)
+
+
+# #3
+# n = int(input('>> '))
+# if n > 0:
+#     print(n + 1)
+# elif n == 0:
+#     print(n += 10)
+# else:
+#     print(n - 2)
+
+# #4
+# a = int(input())
+# b = int(input())
+# c = int(input())
+
+# count = 0
+# ls = []
+# ls.append(a)
+# ls.append(b)
+# ls.append(c)
+# for i in ls:
+#     if i >= 0:
+#         count += 1
+# print(count)
+
+
+
+# import requests
+
+# API_KEY = "f45cc519587b23885b3e8"
+
+
+# #10
+
+# a = int(input('a = '))
+# b = int(input('b = '))
+
+# if a == b:
+#     a *= 2
+#     print(a)
+
+# else:
+#     a, b = 0, 0
+#     print(a,b)
+
+"""7.2.25y"""
+
+# import json
+# import requests
+
+# shaxs = "uzb-muhammadsodikmu"
+# sura =  5
+# oyat = 282
+
+# url = f"https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/{shaxs}/{sura}/{oyat}.json"
+
+# response = requests.get(url).json()
+
+# print(to_latin(response['chapter'][0]['text']))
+
+
+# class Person:
+#     def __init__(self, name, fam):
+#         self.name = name
+#         self.fam = fam
+#     def say_hi(self):
+#         print(f"Hello {self.name}")
+
+# class Pupil(Person):
+#     pass
+# class Student(Person):
+#     pass
+# class Teacher(Person):
+#    pass
+
+# p1 = Pupil('A', 'Z')
+# p1.say_hi()
+
+# class Swim:
+#     def swim(self):
+#         print("Men suza olaman")
+
+# class English:
+#     def speak(self):
+#         print("Men suza olaman")
+
+# class Math:
+#     def slove(self):
+#           print("Men misol yecha olaman")
+
+# class Student(Swim, English, Math):
+#     pass
+# s = Student()
+# s.slove()   
+# s.speak()
+# s.swim()
+
+
+# class Person:
+#     def __init__(self, name, fam):
+#         self.name = name
+#         self.fam = fam
+#     def hi(self):
+#         print("Hello")
+
+# class Englishman(Person):
+#     pass
+
+# class Uzbek(Person):
+#     def hi(self):
+#         super().hi()
+#         print("Salom")
+
+# u1 = Uzbek('Abbos', 'Zafarxo\'jayev')
+
+# u1.hi()
+
+# e1 = Englishman('Jonny', 'Jozef')
+
+# e1.hi()
+# lst = [1,4,2,7,8,0,9,19.37,93]
+
+# x = len(lst) # sonlar soni 7ta
+
+# for i in range (x-1):
+#     max_son = lst[-1]
+#     if lst[i] >= lst[i+1]:
+#         max_son = lst[i]
+
+# print(max_son)
+
+
+# for i in range(1, 5):
+#     print(i)
+# else:
+#     print("this is else block statement" )
+
+# Geografik tavsiflar Qozog‘iston Qirg‘iziston Turkmaniston Tojikiston
+
+
+# for i in range(0.5, 10.5, 0.5):
+#     print(i)
+
+# x = 5
+# y = '5'
+
+# print(x + y)
+
+# for i in range(1,10,5):
+#     print(i)
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+class Human(Person):
+    def __init__(self, name, age, hisobi):
+        super().__init__(name, age)
+        self.__hisobi = hisobi
+
+    def get_hisob(self):
+        return self.__hisobi
+
+p1 = Human('A', 16, 10000)
+
+print(p1.get_hisob())

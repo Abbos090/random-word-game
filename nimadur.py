@@ -95,3 +95,25 @@
 #     penup()
 #     hideturtle()
 # done()
+
+# import math
+
+# print(math.sin(0))
+
+# print(math.tan(23))
+
+
+# import subprocess
+
+# command = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode()
+# profiles = [i.split(":")[1][1:-1] for i in command if "All User Profile" in i]
+# for i in profiles:
+#     results = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles'],i)
+#     results = [b.split(":")[1][1:-1] for b in results if "Key Content" in b]
+#     try:
+#         print("{:30}| {:<}".format(i, results[0]))
+#     except IndexError:
+#         print("{:30}| {:<}".format(i, ""))
+
+# input("")
+
